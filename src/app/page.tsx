@@ -2,6 +2,7 @@ import AboutUs from "@/components/sections/main/about-us";
 import ExpertiseServices from "@/components/sections/main/expertise-services";
 import FAQ from "@/components/sections/main/faq";
 import Hero from "@/components/sections/main/hero";
+import Products from "@/components/sections/main/products";
 import Services from "@/components/sections/main/services";
 import Testimonials from "@/components/sections/main/testimonials";
 import WhyUsCarousel from "@/components/sections/main/why-us-carousel";
@@ -16,6 +17,7 @@ export default function page() {
         className=""
       /> */}
       <Services />
+      <Products />
       <WhyUsCarousel />
       <ExpertiseServices />
       {/* <WhyChooseUs /> */}

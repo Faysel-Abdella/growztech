@@ -142,6 +142,29 @@ export default function Footer() {
           <div
             data-aos="fade-up"
             data-aos-duration="500"
+            data-aos-delay="300"
+            className="flex flex-col space-y-4"
+          >
+            <p className="justify-start text-white text-lg font-normal font-gilroy uppercase leading-normal pb-3">
+              Products
+            </p>
+
+            {footerData.PRODUCTS.map((product) => (
+              <div key={product.href} className="relative group">
+                <Link
+                  href={product.href}
+                  className="text-white/70 hover:text-white transition"
+                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                >
+                  {product.label}
+                </Link>
+              </div>
+            ))}
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
             data-aos-delay="400"
             className="flex flex-col space-y-4"
           >

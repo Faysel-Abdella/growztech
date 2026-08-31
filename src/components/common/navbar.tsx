@@ -19,6 +19,7 @@ export default function Navbar() {
     { name: "About", path: "/about-us" },
     // { name: "Projects", path: "/projects" },
     { name: "Services", path: "/services" },
+    { name: "Products", path: "/#products" },
     { name: "Blogs", path: "/blogs" },
   ];
 
@@ -38,7 +39,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleHashScroll = () => {
       const hash = window.location.hash;
-      if (hash === "#contact-us") {
+      if (hash) {
         const section = document.querySelector(hash);
         if (section) {
           section.scrollIntoView({ behavior: "smooth" });
@@ -58,6 +59,25 @@ export default function Navbar() {
       return pathname === "/";
     }
     return pathname.startsWith(itemPath);
+  };
+
+  // Anchor-based nav items (e.g. "/#products") should smooth-scroll when
+  // already on the target page instead of doing a full client-side navigation.
+  const handleNavItemClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    itemPath: string
+  ) => {
+    const [base, hash] = itemPath.split("#");
+    if (!hash) return;
+
+    if (pathname === (base || "/")) {
+      e.preventDefault();
+      const section = document.querySelector(`#${hash}`);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+        window.history.replaceState(null, "", `#${hash}`);
+      }
+    }
   };
 
   const isOnDarkRoute =
@@ -89,13 +109,14 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="hidden md:flex gap-5 items-center justify-center w-1/2 lg:w-1/3">
+        <div className="hidden md:flex gap-5 items-center justify-end lg:justify-center w-1/2 lg:w-1/3">
           {navItems.map((item) => {
             const isActive = isNavItemActive(item.path);
             return (
               <div key={item.name} className="relative group">
                 <Link
                   href={item.path}
+                  onClick={(e) => handleNavItemClick(e, item.path)}
                   className={`text-base py-2.5 h-full   font-inter leading-normal transition-all duration-300 ${
                     isActive
                       ? " font-semibold"
@@ -175,7 +196,10 @@ export default function Navbar() {
                 className={`text-base py-2  font-inter leading-normal transition-colors duration-300 border-b /10 ${
                   isActive ? " font-extrabold" : " font-normal"
                 }`}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => {
+                  handleNavItemClick(e, item.path);
+                  setIsMenuOpen(false);
+                }}
               >
                 {item.name}
               </Link>

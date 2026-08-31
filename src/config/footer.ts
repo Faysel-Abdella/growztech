@@ -31,6 +31,12 @@ export const footerData = {
     // "Ai & Cloud Solution",
     // "IT Consultation",
   ],
+  PRODUCTS: [
+    {
+      label: "Delivery Platform",
+      href: "/delivery-platform",
+    },
+  ],
   LINKS: [
     {
       label: "About Us",
