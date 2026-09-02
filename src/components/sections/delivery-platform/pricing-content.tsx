@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Check } from "lucide-react";
+import { ArrowLeft, Check } from "lucide-react";
 import SectionShow from "@/components/section-show";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -13,21 +13,36 @@ const transparencyItems = [
   "Maintenance & Support",
 ];
 
-const Pricing = () => {
+const PricingContent = () => {
   return (
-    <section id="pricing" className="flex px-2.5 scroll-mt-24">
-      <div className="flex flex-col gap-12 px-4 items-center justify-center w-full h-fit py-16 md:py-20 relative">
-        <div className="max-w-2xl flex-col items-center gap-6 flex text-center">
-          <SectionShow title="Pricing" />
-          <h2
-            data-aos="fade-up"
-            data-aos-duration="700"
-            className="text-foreground text-3xl md:text-4xl lg:text-5xl font-extrabold font-gilroy leading-10 md:leading-[60px]"
-          >
-            Simple, Transparent Plans
-          </h2>
-        </div>
+    <main className="w-screen bg-white">
+      <div className="flex flex-col items-center gap-8 pt-32 pb-10 px-6 text-center">
+        <SectionShow title="Pricing" />
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="600"
+          className="max-w-3xl font-clashgrotesk font-semibold text-3xl md:text-5xl lg:text-6xl"
+        >
+          Simple, Transparent Plans
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="700"
+          className="max-w-2xl text-description text-base md:text-lg font-inter leading-relaxed"
+        >
+          Start with the vertical you need today and expand as your business grows. Every plan
+          clearly separates what&apos;s included so you know exactly what you&apos;re paying for.
+        </p>
+        <Link
+          href="/delivery-platform"
+          className="inline-flex items-center gap-1.5 text-sm font-inter text-description hover:text-foreground transition-colors"
+        >
+          <ArrowLeft className="size-3.5" />
+          Back to Overview
+        </Link>
+      </div>
 
+      <div className="flex flex-col gap-12 px-4 items-center justify-center w-full pb-16 md:pb-28">
         <div
           data-aos="fade-up"
           data-aos-duration="700"
@@ -102,8 +117,8 @@ const Pricing = () => {
           </p>
         </div>
       </div>
-    </section>
+    </main>
   );
 };
 
-export default Pricing;
+export default PricingContent;

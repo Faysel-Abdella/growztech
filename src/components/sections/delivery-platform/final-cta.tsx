@@ -25,7 +25,7 @@ const DeliveryPlatformFinalCta = () => {
             variant="outline"
             asChild
           >
-            <Link href="/delivery-platform#pricing">Get Pricing</Link>
+            <Link href="/delivery-platform/pricing">Get Pricing</Link>
           </Button>
         </div>
         <p className="max-w-xl text-background2-description text-sm font-inter leading-relaxed mt-2">

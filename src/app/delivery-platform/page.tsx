@@ -7,7 +7,6 @@ import ProductEcosystemSummary from "@/components/sections/delivery-platform/pro
 import WhyChoose from "@/components/sections/delivery-platform/why-choose";
 import BuildVsBuy from "@/components/sections/delivery-platform/build-vs-buy";
 import SuccessStories from "@/components/sections/delivery-platform/success-stories";
-import Pricing from "@/components/sections/delivery-platform/pricing";
 import DeliveryPlatformFaq from "@/components/sections/delivery-platform/faq";
 import DeliveryPlatformFinalCta from "@/components/sections/delivery-platform/final-cta";
 
@@ -23,7 +22,6 @@ const DeliveryPlatformPage = () => {
       <WhyChoose />
       <BuildVsBuy />
       <SuccessStories />
-      <Pricing />
       <DeliveryPlatformFaq />
       <DeliveryPlatformFinalCta />
     </div>

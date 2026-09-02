@@ -550,16 +550,6 @@ export const deliveryFaqItems: FaqItem[] = [
   },
   {
     value: "04",
-    question: "Can I run multiple restaurants and stores?",
-    answer: (
-      <p className="leading-relaxed">
-        Yes. Merchant management supports multiple restaurants and stores operating on the same
-        platform, each with their own menus, products and orders.
-      </p>
-    ),
-  },
-  {
-    value: "05",
     question: "Can customers request custom deliveries?",
     answer: (
       <p className="leading-relaxed">
@@ -569,7 +559,7 @@ export const deliveryFaqItems: FaqItem[] = [
     ),
   },
   {
-    value: "06",
+    value: "05",
     question: "Does the platform support multiple deliveries per rider?",
     answer: (
       <p className="leading-relaxed">
@@ -580,7 +570,7 @@ export const deliveryFaqItems: FaqItem[] = [
     ),
   },
   {
-    value: "07",
+    value: "06",
     question: "Do customers, merchants and riders get a mobile app?",
     answer: (
       <p className="leading-relaxed">
@@ -590,7 +580,7 @@ export const deliveryFaqItems: FaqItem[] = [
     ),
   },
   {
-    value: "08",
+    value: "07",
     question: "Do I get an admin dashboard?",
     answer: (
       <p className="leading-relaxed">
@@ -600,17 +590,7 @@ export const deliveryFaqItems: FaqItem[] = [
     ),
   },
   {
-    value: "09",
-    question: "Can I customize the branding?",
-    answer: (
-      <p className="leading-relaxed">
-        Yes. The platform is designed to be adapted to your brand across the customer, merchant
-        and rider apps as well as the admin dashboard.
-      </p>
-    ),
-  },
-  {
-    value: "10",
+    value: "08",
     question: "Can I integrate my own payment gateway?",
     answer: (
       <p className="leading-relaxed">
@@ -620,7 +600,7 @@ export const deliveryFaqItems: FaqItem[] = [
     ),
   },
   {
-    value: "11",
+    value: "09",
     question: "Can I operate in multiple cities?",
     answer: (
       <p className="leading-relaxed">
@@ -630,34 +610,13 @@ export const deliveryFaqItems: FaqItem[] = [
     ),
   },
   {
-    value: "12",
+    value: "10",
     question: "Do you provide deployment and maintenance?",
     answer: (
       <p className="leading-relaxed">
         Deployment and ongoing maintenance and support are available as part of your plan. Setup,
         integrations and custom development are scoped and priced separately from the platform
         license — see the pricing section for details.
-      </p>
-    ),
-  },
-  {
-    value: "13",
-    question: "Can I request custom features?",
-    answer: (
-      <p className="leading-relaxed">
-        Yes. Custom features and workflows can be added through custom development, handled
-        separately from the base platform license.
-      </p>
-    ),
-  },
-  {
-    value: "14",
-    question: "Do I get the source code?",
-    answer: (
-      <p className="leading-relaxed">
-        Source code access, white-label rights, hosting and support terms depend on the plan and
-        engagement. Our team will walk you through the exact licensing arrangement before you
-        commit.
       </p>
     ),
   },
