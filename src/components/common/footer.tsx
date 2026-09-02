@@ -23,7 +23,7 @@ const CustomLink: React.FC<{
         href={href}
         className={cn(
           "justify-start text-white/70 text-base font-normal font-inter leading-normal  w-full",
-          className
+          className,
         )}
       >
         {children}
@@ -39,7 +39,7 @@ export default function Footer() {
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
-    href: string
+    href: string,
   ) => {
     e.preventDefault();
 
@@ -108,7 +108,7 @@ export default function Footer() {
             Venas Technologies, 2025.
           </p>
         </div>
-        <div className="flex space-x-20 flex-wrap gap-y-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-20  gap-y-10">
           <div
             data-aos="fade-up"
             data-aos-duration="500"
@@ -124,19 +124,20 @@ export default function Footer() {
                 <div className="text-white/70">{service}</div>
               </div>
             ))} */}
-            
 
             {footerData.SERVICES.map((service) => (
-            <div key={service.href} className="relative group">
-            <Link
-      href={service.href}
-      className="text-white/70 hover:text-white transition"
-      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-    >
-      {service.label}
-    </Link>
-  </div>
-))}
+              <div key={service.href} className="relative group">
+                <Link
+                  href={service.href}
+                  className="text-white/70 hover:text-white transition"
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                >
+                  {service.label}
+                </Link>
+              </div>
+            ))}
           </div>
 
           <div
@@ -154,7 +155,9 @@ export default function Footer() {
                 <Link
                   href={product.href}
                   className="text-white/70 hover:text-white transition"
-                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
                 >
                   {product.label}
                 </Link>
@@ -189,7 +192,7 @@ export default function Footer() {
             </p>
 
             {footerData.CONTACT.map((contact, index) => (
-              <p key={index} className="flex items-center gap-2">
+              <p key={index} className="flex items-center gap-2 text-nowrap">
                 {contact.country && contact.country + ": "}
                 <CopyButton key={index} text={contact.contact} />
               </p>
