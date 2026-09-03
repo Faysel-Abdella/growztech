@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Smartphone, Store, Bike, LayoutDashboard } from "lucide-react";
+import { FilledIcons } from "@/components/ui/filled-icons";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { PhoneMockup, DashboardMockup } from "./mockups";
@@ -84,23 +84,23 @@ export default function DeliveryPlatformHero() {
       >
         <DashboardMockup
           label="Admin Dashboard"
-          icon={LayoutDashboard}
+          icon={FilledIcons.LayoutDashboard}
           className="w-full max-w-3xl"
         />
         <div className="flex flex-wrap items-start justify-center gap-6">
           <PhoneMockup
             label="Customer App"
-            icon={Smartphone}
+            icon={FilledIcons.Smartphone}
             className="max-w-[150px]"
           />
           <PhoneMockup
             label="Merchant App"
-            icon={Store}
+            icon={FilledIcons.Store}
             className="max-w-[150px]"
           />
           <PhoneMockup
             label="Rider App"
-            icon={Bike}
+            icon={FilledIcons.Bike}
             className="max-w-[150px]"
           />
         </div>

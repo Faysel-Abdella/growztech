@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Check } from "lucide-react";
+import { FilledIcons } from "@/components/ui/filled-icons";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { Vertical } from "./data";
@@ -48,7 +48,7 @@ const VerticalSection = ({ vertical, index }: VerticalSectionProps) => {
               <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-3">
                 {vertical.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-2.5 text-sm font-inter">
-                    <Check className="size-4 shrink-0 mt-0.5 text-primary" />
+                    <FilledIcons.Check className="size-4 shrink-0 mt-0.5 text-primary" />
                     <span>{feature}</span>
                   </li>
                 ))}
@@ -63,7 +63,7 @@ const VerticalSection = ({ vertical, index }: VerticalSectionProps) => {
                       {step}
                     </span>
                     {i < vertical.flow!.length - 1 && (
-                      <ArrowRight className="size-4 text-description shrink-0" />
+                      <FilledIcons.ArrowRight className="size-4 text-description shrink-0" />
                     )}
                   </div>
                 ))}

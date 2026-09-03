@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, Check } from "lucide-react";
+import { FilledIcons } from "@/components/ui/filled-icons";
 import SectionShow from "@/components/section-show";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -37,7 +37,7 @@ const PricingContent = () => {
           href="/delivery-platform"
           className="inline-flex items-center gap-1.5 text-sm font-inter text-description hover:text-foreground transition-colors"
         >
-          <ArrowLeft className="size-3.5" />
+          <FilledIcons.ArrowLeft className="size-3.5" />
           Back to Overview
         </Link>
       </div>
@@ -71,7 +71,7 @@ const PricingContent = () => {
               <ul className="flex flex-col gap-3">
                 {plan.includes.map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm font-inter">
-                    <Check className="size-4 shrink-0 mt-0.5 text-primary" />
+                    <FilledIcons.Check className="size-4 shrink-0 mt-0.5 text-primary" />
                     <span>{item}</span>
                   </li>
                 ))}

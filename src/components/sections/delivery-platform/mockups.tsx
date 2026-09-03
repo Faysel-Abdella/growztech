@@ -1,9 +1,9 @@
-import type { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import type { IconComponent } from "./data";
 
 interface PhoneMockupProps {
   label: string;
-  icon: LucideIcon;
+  icon: IconComponent;
   className?: string;
 }
 
@@ -43,7 +43,7 @@ export function PhoneMockup({ label, icon: Icon, className }: PhoneMockupProps) 
 
 interface DashboardMockupProps {
   label: string;
-  icon: LucideIcon;
+  icon: IconComponent;
   className?: string;
 }
 

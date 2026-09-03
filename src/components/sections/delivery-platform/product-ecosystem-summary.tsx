@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { LayoutDashboard } from "lucide-react";
+import { FilledIcons } from "@/components/ui/filled-icons";
 import SectionShow from "@/components/section-show";
 import { Button } from "@/components/ui/button";
 import { platformApps } from "./data";
@@ -36,7 +36,7 @@ const ProductEcosystemSummary = () => {
                 <PhoneMockup key={app.slug} label={app.label} icon={app.icon} className="max-w-[150px]" />
               ))}
           </div>
-          <DashboardMockup label="Admin Dashboard" icon={LayoutDashboard} className="w-full max-w-2xl" />
+          <DashboardMockup label="Admin Dashboard" icon={FilledIcons.LayoutDashboard} className="w-full max-w-2xl" />
         </div>
 
         <div className="flex justify-center w-full">

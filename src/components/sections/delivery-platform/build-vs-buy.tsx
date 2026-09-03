@@ -1,4 +1,5 @@
-import { Check, X } from "lucide-react";
+import { X } from "lucide-react";
+import { FilledIcons } from "@/components/ui/filled-icons";
 import SectionShow from "@/components/section-show";
 import { buildVsBuyIncluded, buildVsBuyExtra } from "./data";
 
@@ -51,7 +52,7 @@ const BuildVsBuy = () => {
                     </td>
                     <td className="px-6 py-4 border-b border-border">
                       <span className="inline-flex items-center gap-2 text-primary font-inter font-medium">
-                        <Check className="size-4 shrink-0" />
+                        <FilledIcons.Check className="size-4 shrink-0" />
                         Included
                       </span>
                     </td>

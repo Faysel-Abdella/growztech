@@ -1,12 +1,12 @@
-import { Smartphone, Store, Bike, LayoutDashboard, type LucideIcon } from "lucide-react";
+import { FilledIcons } from "@/components/ui/filled-icons";
 import SectionShow from "@/components/section-show";
-import { screenshotGroups } from "./data";
+import { screenshotGroups, type IconComponent } from "./data";
 
-const groupIcons: Record<string, LucideIcon> = {
-  "Customer Experience": Smartphone,
-  "Merchant Experience": Store,
-  "Rider Experience": Bike,
-  "Admin Experience": LayoutDashboard,
+const groupIcons: Record<string, IconComponent> = {
+  "Customer Experience": FilledIcons.Smartphone,
+  "Merchant Experience": FilledIcons.Store,
+  "Rider Experience": FilledIcons.Bike,
+  "Admin Experience": FilledIcons.LayoutDashboard,
 };
 
 const ScreenshotShowcase = () => {
@@ -26,7 +26,7 @@ const ScreenshotShowcase = () => {
 
         <div data-aos="fade-up" data-aos-duration="700" className="flex flex-col gap-10 w-full">
           {screenshotGroups.map((group) => {
-            const GroupIcon = groupIcons[group.label] ?? Smartphone;
+            const GroupIcon = groupIcons[group.label] ?? FilledIcons.Smartphone;
             return (
               <div key={group.label} className="flex flex-col gap-5">
                 <div className="flex items-center gap-2.5">

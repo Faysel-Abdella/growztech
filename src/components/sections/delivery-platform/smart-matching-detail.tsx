@@ -1,4 +1,4 @@
-import { ArrowRight, Route, Bike, User } from "lucide-react";
+import { FilledIcons } from "@/components/ui/filled-icons";
 import SectionShow from "@/components/section-show";
 import { smartMatchingBenefits } from "./data";
 
@@ -54,23 +54,23 @@ const SmartMatchingDetail = () => {
                 ))}
               </div>
 
-              <ArrowRight className="size-6 text-description shrink-0 rotate-90 md:rotate-0" />
+              <FilledIcons.ArrowRight className="size-6 text-description shrink-0 rotate-90 md:rotate-0" />
 
               <div className="flex flex-col items-center gap-2 rounded-2xl bg-primary/10 px-6 py-5">
-                <Route className="size-8 text-primary" />
+                <FilledIcons.Route className="size-8 text-primary" />
                 <p className="text-sm font-semibold font-inter text-primary text-center">
                   Smart Matching
                 </p>
               </div>
 
-              <ArrowRight className="size-6 text-description shrink-0 rotate-90 md:rotate-0" />
+              <FilledIcons.ArrowRight className="size-6 text-description shrink-0 rotate-90 md:rotate-0" />
 
               <div className="flex flex-col items-center gap-2 rounded-2xl bg-muted px-6 py-5">
-                <Bike className="size-7 text-foreground" />
+                <FilledIcons.Bike className="size-7 text-foreground" />
                 <p className="text-sm font-semibold font-inter text-center">Rider</p>
               </div>
 
-              <ArrowRight className="size-6 text-description shrink-0 rotate-90 md:rotate-0" />
+              <FilledIcons.ArrowRight className="size-6 text-description shrink-0 rotate-90 md:rotate-0" />
 
               <div className="flex md:flex-col gap-3">
                 {customers.map((customer) => (
@@ -78,7 +78,7 @@ const SmartMatchingDetail = () => {
                     key={customer}
                     className="inline-flex items-center gap-1.5 rounded-full bg-muted px-4 py-2 text-sm font-inter font-medium"
                   >
-                    <User className="size-3.5" />
+                    <FilledIcons.User className="size-3.5" />
                     {customer}
                   </span>
                 ))}

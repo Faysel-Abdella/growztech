@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { FilledIcons } from "@/components/ui/filled-icons";
 import SectionShow from "@/components/section-show";
 import { verticals } from "./data";
 import SolutionsNav from "./solutions-nav";
@@ -30,7 +30,7 @@ const SolutionsContent = () => {
           href="/delivery-platform"
           className="inline-flex items-center gap-1.5 text-sm font-inter text-description hover:text-foreground transition-colors"
         >
-          <ArrowLeft className="size-3.5" />
+          <FilledIcons.ArrowLeft className="size-3.5" />
           Back to Overview
         </Link>
       </div>

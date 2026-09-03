@@ -1,26 +1,26 @@
-import { Smartphone, Store, Bike, LayoutDashboard } from "lucide-react";
+import { FilledIcons } from "@/components/ui/filled-icons";
 import SectionShow from "@/components/section-show";
 
 const roles = [
   {
     title: "Customer",
     description: "Order, pay and track deliveries.",
-    icon: Smartphone,
+    icon: FilledIcons.Smartphone,
   },
   {
     title: "Merchant",
     description: "Manage products, orders and business operations.",
-    icon: Store,
+    icon: FilledIcons.Store,
   },
   {
     title: "Rider",
     description: "Receive deliveries, navigate and complete orders.",
-    icon: Bike,
+    icon: FilledIcons.Bike,
   },
   {
     title: "Admin",
     description: "Control the entire platform from one dashboard.",
-    icon: LayoutDashboard,
+    icon: FilledIcons.LayoutDashboard,
   },
 ];
 

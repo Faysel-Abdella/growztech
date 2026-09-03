@@ -3,14 +3,14 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutGrid, Smartphone, Layers, CreditCard } from "lucide-react";
+import { FilledIcons } from "@/components/ui/filled-icons";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { label: "Overview", href: "/delivery-platform", icon: LayoutGrid },
-  { label: "Platforms", href: "/delivery-platform/platform", icon: Smartphone },
-  { label: "Solutions", href: "/delivery-platform/solutions", icon: Layers },
-  { label: "Pricing", href: "/delivery-platform/pricing", icon: CreditCard },
+  { label: "Overview", href: "/delivery-platform", icon: FilledIcons.LayoutGrid },
+  { label: "Platforms", href: "/delivery-platform/platform", icon: FilledIcons.Smartphone },
+  { label: "Solutions", href: "/delivery-platform/solutions", icon: FilledIcons.Layers },
+  { label: "Pricing", href: "/delivery-platform/pricing", icon: FilledIcons.CreditCard },
 ];
 
 const DeliveryPlatformSectionNav = () => {

@@ -1,29 +1,8 @@
-import type { LucideIcon } from "lucide-react";
-import {
-  Utensils,
-  ShoppingCart,
-  Store,
-  MapPinned,
-  Smartphone,
-  LayoutDashboard,
-  Bike,
-  Users,
-  Gauge,
-  Layers,
-  Route,
-  BarChart3,
-  Sparkles,
-  Settings,
-  CreditCard,
-  MapPin,
-  MessageSquareText,
-  Bell,
-  Cloud,
-  ClipboardList,
-  Building2,
-  Plug,
-} from "lucide-react";
+import { FilledIcons } from "@/components/ui/filled-icons";
 import type { FaqItem } from "@/types/shared.types";
+import type { ComponentType } from "react";
+
+export type IconComponent = ComponentType<{ className?: string }>;
 
 export type Vertical = {
   slug: string;
@@ -34,7 +13,7 @@ export type Vertical = {
   features?: string[];
   flow?: string[];
   useCases?: string[];
-  icon: LucideIcon;
+  icon: IconComponent;
 };
 
 export const verticals: Vertical[] = [
@@ -56,7 +35,7 @@ export const verticals: Vertical[] = [
       "Live tracking",
       "Ratings and reviews",
     ],
-    icon: Utensils,
+    icon: FilledIcons.Utensils,
   },
   {
     slug: "grocery-supermarket",
@@ -77,7 +56,7 @@ export const verticals: Vertical[] = [
       "Rider delivery",
       "Promotions",
     ],
-    icon: ShoppingCart,
+    icon: FilledIcons.ShoppingCart,
   },
   {
     slug: "retail-marketplace",
@@ -96,7 +75,7 @@ export const verticals: Vertical[] = [
       "Promotions",
       "Delivery management",
     ],
-    icon: Store,
+    icon: FilledIcons.Store,
   },
   {
     slug: "on-demand-delivery",
@@ -123,7 +102,7 @@ export const verticals: Vertical[] = [
       "Local store deliveries",
       "Courier services",
     ],
-    icon: MapPinned,
+    icon: FilledIcons.MapPinned,
   },
 ];
 
@@ -133,7 +112,7 @@ export type PlatformApp = {
   headline: string;
   description: string;
   capabilities: string[];
-  icon: LucideIcon;
+  icon: IconComponent;
   mockup: "phone" | "dashboard";
 };
 
@@ -158,7 +137,7 @@ export const platformApps: PlatformApp[] = [
       "Reorder",
       "Receive notifications",
     ],
-    icon: Smartphone,
+    icon: FilledIcons.Smartphone,
     mockup: "phone",
   },
   {
@@ -179,7 +158,7 @@ export const platformApps: PlatformApp[] = [
       "View earnings",
       "Manage promotions",
     ],
-    icon: Store,
+    icon: FilledIcons.Store,
     mockup: "phone",
   },
   {
@@ -198,7 +177,7 @@ export const platformApps: PlatformApp[] = [
       "View earnings",
       "View delivery history",
     ],
-    icon: Bike,
+    icon: FilledIcons.Bike,
     mockup: "phone",
   },
   {
@@ -224,7 +203,7 @@ export const platformApps: PlatformApp[] = [
       "Reports",
       "Analytics",
     ],
-    icon: LayoutDashboard,
+    icon: FilledIcons.LayoutDashboard,
     mockup: "dashboard",
   },
 ];
@@ -233,23 +212,23 @@ export const smartMatchingBenefits = [
   {
     title: "Better Rider Utilization",
     description: "Make better use of available delivery capacity.",
-    icon: Gauge,
+    icon: FilledIcons.Gauge,
   },
   {
     title: "More Efficient Deliveries",
     description: "Combine compatible deliveries when appropriate.",
-    icon: Route,
+    icon: FilledIcons.Route,
   },
   {
     title: "Fewer Unnecessary Trips",
     description: "Reduce redundant delivery journeys.",
-    icon: Layers,
+    icon: FilledIcons.Layers,
   },
   {
     title: "Scale With Demand",
     description:
       "Support higher order volumes without relying only on adding more riders.",
-    icon: BarChart3,
+    icon: FilledIcons.BarChart3,
   },
 ];
 
@@ -258,31 +237,31 @@ export const differentiators = [
     title: "Ready-to-Launch",
     description:
       "Start with an established delivery foundation instead of building every component from scratch.",
-    icon: Sparkles,
+    icon: FilledIcons.Sparkles,
   },
   {
     title: "Multi-Vertical",
     description:
       "Food, grocery, supermarket, retail and on-demand delivery from one platform.",
-    icon: Layers,
+    icon: FilledIcons.Layers,
   },
   {
     title: "Smart Delivery Operations",
     description:
       "Intelligent order matching and delivery assignment help improve fleet utilization.",
-    icon: Route,
+    icon: FilledIcons.Route,
   },
   {
     title: "Complete Ecosystem",
     description:
       "Customer, merchant, rider and admin applications work together.",
-    icon: Users,
+    icon: FilledIcons.Users,
   },
   {
     title: "Customizable",
     description:
       "Adapt branding, business rules, integrations and workflows to your operation.",
-    icon: Settings,
+    icon: FilledIcons.Settings,
   },
 ];
 
@@ -456,16 +435,15 @@ export const featureCategories: { title: string; items: string[] }[] = [
   },
 ];
 
-export const integrationCategories: { title: string; icon: LucideIcon }[] = [
-  { title: "Payment Gateways", icon: CreditCard },
-  { title: "Maps & Navigation", icon: MapPin },
-  { title: "SMS", icon: MessageSquareText },
-  { title: "Push Notifications", icon: Bell },
-  { title: "Analytics", icon: BarChart3 },
-  { title: "Cloud Infrastructure", icon: Cloud },
-  { title: "POS Systems", icon: ClipboardList },
-  { title: "ERP Systems", icon: Building2 },
-  { title: "External APIs", icon: Plug },
+export const integrationCategories: { title: string; icon: IconComponent }[] = [
+  { title: "Payment Gateways", icon: FilledIcons.CreditCard },
+  { title: "Maps & Navigation", icon: FilledIcons.MapPin },
+  { title: "SMS", icon: FilledIcons.MessageSquareText },
+  { title: "Push Notifications", icon: FilledIcons.Bell },
+  { title: "Analytics", icon: FilledIcons.BarChart3 },
+  { title: "Cloud Infrastructure", icon: FilledIcons.Cloud },
+  { title: "POS Systems", icon: FilledIcons.ClipboardList },
+  { title: "External APIs", icon: FilledIcons.Plug },
 ];
 
 export const orderJourneySteps: {
