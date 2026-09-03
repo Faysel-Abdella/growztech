@@ -21,7 +21,7 @@ export const verticals: Vertical[] = [
     slug: "food-delivery",
     navLabel: "Food Delivery",
     summary:
-      "Connect customers with restaurants and manage the entire ordering and delivery experience.",
+      "Connect customers with restaurants and manage ordering and delivery end to end.",
     headline: "Launch Your Own Food Delivery Marketplace",
     description:
       "Connect customers with restaurants and manage the entire ordering and delivery experience.",
@@ -62,7 +62,7 @@ export const verticals: Vertical[] = [
     slug: "retail-marketplace",
     navLabel: "Retail Marketplace",
     summary:
-      "Turn local stores and retailers into an online marketplace with integrated ordering and delivery.",
+      "Turn local stores and retailers into an online marketplace with integrated delivery.",
     headline: "Connect Local Businesses With Customers",
     description:
       "Turn local stores and retailers into an online marketplace with integrated ordering and delivery.",
@@ -81,7 +81,7 @@ export const verticals: Vertical[] = [
     slug: "on-demand-delivery",
     navLabel: "On-Demand Delivery",
     summary:
-      "Let customers request delivery between any pickup and drop-off location.",
+      "Let customers request delivery between any pickup and drop-off location, no store needed.",
     headline: "Deliver Items From Anywhere to Anywhere",
     description:
       "Allow customers to request delivery without selecting a restaurant or store.",
@@ -221,13 +221,12 @@ export const smartMatchingBenefits = [
   },
   {
     title: "Fewer Unnecessary Trips",
-    description: "Reduce redundant delivery journeys.",
+    description: "Reduce redundant and unnecessary delivery trips.",
     icon: FilledIcons.Layers,
   },
   {
     title: "Scale With Demand",
-    description:
-      "Support higher order volumes without relying only on adding more riders.",
+    description: "Scale to higher order volumes without adding more riders.",
     icon: FilledIcons.BarChart3,
   },
 ];
@@ -236,32 +235,38 @@ export const differentiators = [
   {
     title: "Ready-to-Launch",
     description:
-      "Start with an established delivery foundation instead of building every component from scratch.",
+      "Start with an established delivery foundation instead of building everything from scratch.",
     icon: FilledIcons.Sparkles,
   },
   {
     title: "Multi-Vertical",
     description:
-      "Food, grocery, supermarket, retail and on-demand delivery from one platform.",
+      "Run food, grocery, supermarket, retail and on-demand delivery from one single platform.",
     icon: FilledIcons.Layers,
   },
   {
     title: "Smart Delivery Operations",
     description:
-      "Intelligent order matching and delivery assignment help improve fleet utilization.",
+      "Intelligent order matching and rider assignment help improve fleet utilization and speed.",
     icon: FilledIcons.Route,
   },
   {
     title: "Complete Ecosystem",
     description:
-      "Customer, merchant, rider and admin applications work together.",
+      "Customer, merchant, rider and admin applications all work together on one platform.",
     icon: FilledIcons.Users,
   },
   {
     title: "Customizable",
     description:
-      "Adapt branding, business rules, integrations and workflows to your operation.",
+      "Adapt branding, business rules, integrations and workflows to fit your operation.",
     icon: FilledIcons.Settings,
+  },
+  {
+    title: "Ongoing Support",
+    description:
+      "Get deployment, maintenance and support so your team can focus on growing the business.",
+    icon: FilledIcons.MessageSquareText,
   },
 ];
 

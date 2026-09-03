@@ -1,6 +1,7 @@
 import { X } from "lucide-react";
 import { FilledIcons } from "@/components/ui/filled-icons";
 import SectionShow from "@/components/section-show";
+import { cn } from "@/lib/utils";
 import { buildVsBuyIncluded, buildVsBuyExtra } from "./data";
 
 const BuildVsBuy = () => {
@@ -58,24 +59,42 @@ const BuildVsBuy = () => {
                     </td>
                   </tr>
                 ))}
-                {buildVsBuyExtra.map((row, i) => (
-                  <tr
-                    key={row.label}
-                    className={
-                      (buildVsBuyIncluded.length + i) % 2 === 1 ? "bg-muted/30" : undefined
-                    }
-                  >
-                    <td className="px-6 py-4 font-inter text-foreground border-b border-border last:border-b-0">
-                      {row.label}
-                    </td>
-                    <td className="px-6 py-4 font-inter text-description border-b border-border last:border-b-0">
-                      {row.build}
-                    </td>
-                    <td className="px-6 py-4 font-inter font-medium text-primary border-b border-border last:border-b-0">
-                      {row.platform}
-                    </td>
-                  </tr>
-                ))}
+                {buildVsBuyExtra.map((row, i) => {
+                  const isLastRow = i === buildVsBuyExtra.length - 1;
+                  return (
+                    <tr
+                      key={row.label}
+                      className={
+                        (buildVsBuyIncluded.length + i) % 2 === 1 ? "bg-muted/30" : undefined
+                      }
+                    >
+                      <td
+                        className={cn(
+                          "px-6 py-4 font-inter text-foreground",
+                          !isLastRow && "border-b border-border"
+                        )}
+                      >
+                        {row.label}
+                      </td>
+                      <td
+                        className={cn(
+                          "px-6 py-4 font-inter text-description",
+                          !isLastRow && "border-b border-border"
+                        )}
+                      >
+                        {row.build}
+                      </td>
+                      <td
+                        className={cn(
+                          "px-6 py-4 font-inter font-medium text-primary",
+                          !isLastRow && "border-b border-border"
+                        )}
+                      >
+                        {row.platform}
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>

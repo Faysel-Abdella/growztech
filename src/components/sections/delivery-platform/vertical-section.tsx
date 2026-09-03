@@ -20,7 +20,7 @@ const VerticalSection = ({ vertical, index }: VerticalSectionProps) => {
       data-aos="fade-up"
       data-aos-duration="700"
     >
-      <div className="w-full max-w-6xl mx-auto py-14 md:py-20 border-b border-border last:border-b-0">
+      <div className="w-full max-w-6xl mx-auto py-14 md:py-20 px-4 md:px-6 border-b border-border last:border-b-0">
         <div
           className={cn(
             "flex flex-col lg:flex-row items-center gap-10 lg:gap-16",
@@ -88,7 +88,7 @@ const VerticalSection = ({ vertical, index }: VerticalSectionProps) => {
               </div>
             )}
 
-            <Button className="w-fit rounded-full !h-11 !px-6 mt-2" asChild>
+            <Button className="w-fit rounded-full !h-11 !px-6 mt-2 self-center lg:self-start" asChild>
               <Link href="/contact-us">Request a Demo</Link>
             </Button>
           </div>

@@ -19,8 +19,8 @@ const DeliveryPlatformPage = () => {
       <BusinessModels />
       <SmartMatchingSummary />
       <ProductEcosystemSummary />
-      <WhyChoose />
       <BuildVsBuy />
+      <WhyChoose />
       <SuccessStories />
       <DeliveryPlatformFaq />
       <DeliveryPlatformFinalCta />

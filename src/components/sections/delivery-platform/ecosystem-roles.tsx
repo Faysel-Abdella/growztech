@@ -4,7 +4,7 @@ import SectionShow from "@/components/section-show";
 const roles = [
   {
     title: "Customer",
-    description: "Order, pay and track deliveries.",
+    description: "Order, pay and track deliveries in real time.",
     icon: FilledIcons.Smartphone,
   },
   {
