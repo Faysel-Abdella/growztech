@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import React, { PropsWithChildren } from "react";
 import ScrollToTop from "../../components/ScrollToTop";
+import DeliveryPlatformSectionNav from "@/components/sections/delivery-platform/section-nav";
 
 export const metadata: Metadata = {
   title: "White-Label Delivery Platform | Launch Your Own Delivery Business",
@@ -49,6 +50,7 @@ const DeliveryPlatformLayout = ({ children }: PropsWithChildren) => {
   return (
     <>
       <ScrollToTop />
+      <DeliveryPlatformSectionNav />
       {children}
     </>
   );

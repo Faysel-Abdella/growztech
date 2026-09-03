@@ -101,9 +101,11 @@ export const verticals: Vertical[] = [
   {
     slug: "on-demand-delivery",
     navLabel: "On-Demand Delivery",
-    summary: "Let customers request delivery between any pickup and drop-off location.",
+    summary:
+      "Let customers request delivery between any pickup and drop-off location.",
     headline: "Deliver Items From Anywhere to Anywhere",
-    description: "Allow customers to request delivery without selecting a restaurant or store.",
+    description:
+      "Allow customers to request delivery without selecting a restaurant or store.",
     flow: [
       "Pickup Location",
       "Drop-off Location",
@@ -245,7 +247,8 @@ export const smartMatchingBenefits = [
   },
   {
     title: "Scale With Demand",
-    description: "Support higher order volumes without relying only on adding more riders.",
+    description:
+      "Support higher order volumes without relying only on adding more riders.",
     icon: BarChart3,
   },
 ];
@@ -259,7 +262,8 @@ export const differentiators = [
   },
   {
     title: "Multi-Vertical",
-    description: "Food, grocery, supermarket, retail and on-demand delivery from one platform.",
+    description:
+      "Food, grocery, supermarket, retail and on-demand delivery from one platform.",
     icon: Layers,
   },
   {
@@ -270,12 +274,14 @@ export const differentiators = [
   },
   {
     title: "Complete Ecosystem",
-    description: "Customer, merchant, rider and admin applications work together.",
+    description:
+      "Customer, merchant, rider and admin applications work together.",
     icon: Users,
   },
   {
     title: "Customizable",
-    description: "Adapt branding, business rules, integrations and workflows to your operation.",
+    description:
+      "Adapt branding, business rules, integrations and workflows to your operation.",
     icon: Settings,
   },
 ];
@@ -292,10 +298,26 @@ export const buildVsBuyIncluded = [
   "Marketplace",
 ];
 
-export const buildVsBuyExtra: { label: string; build: string; platform: string }[] = [
-  { label: "Testing", build: "Your responsibility", platform: "Existing foundation" },
-  { label: "Deployment", build: "Build infrastructure", platform: "Deployment-ready" },
-  { label: "Future Expansion", build: "Additional development", platform: "Multi-vertical" },
+export const buildVsBuyExtra: {
+  label: string;
+  build: string;
+  platform: string;
+}[] = [
+  {
+    label: "Testing",
+    build: "Your responsibility",
+    platform: "Existing foundation",
+  },
+  {
+    label: "Deployment",
+    build: "Build infrastructure",
+    platform: "Deployment-ready",
+  },
+  {
+    label: "Future Expansion",
+    build: "Additional development",
+    platform: "Multi-vertical",
+  },
 ];
 
 export type PricingPlan = {
@@ -446,7 +468,11 @@ export const integrationCategories: { title: string; icon: LucideIcon }[] = [
   { title: "External APIs", icon: Plug },
 ];
 
-export const orderJourneySteps: { step: number; title: string; description: string }[] = [
+export const orderJourneySteps: {
+  step: number;
+  title: string;
+  description: string;
+}[] = [
   {
     step: 1,
     title: "Customer Orders",
@@ -465,7 +491,8 @@ export const orderJourneySteps: { step: number; title: string; description: stri
   {
     step: 4,
     title: "Smart Matching",
-    description: "Compatible orders are grouped when appropriate for a more efficient run.",
+    description:
+      "Compatible orders are grouped when appropriate for a more efficient run.",
   },
   {
     step: 5,
@@ -491,12 +518,25 @@ export const screenshotGroups: {
 }[] = [
   {
     label: "Customer Experience",
-    screens: ["Home", "Restaurant / Store", "Product / Menu", "Cart", "Checkout", "Order Tracking"],
+    screens: [
+      "Home",
+      "Restaurant / Store",
+      "Product / Menu",
+      "Cart",
+      "Checkout",
+      "Order Tracking",
+    ],
     mockup: "phone",
   },
   {
     label: "Merchant Experience",
-    screens: ["Dashboard", "Orders", "Menu / Products", "Order Details", "Earnings"],
+    screens: [
+      "Dashboard",
+      "Orders",
+      "Menu / Products",
+      "Order Details",
+      "Earnings",
+    ],
     mockup: "phone",
   },
   {
@@ -512,7 +552,14 @@ export const screenshotGroups: {
   },
   {
     label: "Admin Experience",
-    screens: ["Dashboard", "Orders", "Merchants", "Riders", "Analytics", "Delivery Management"],
+    screens: [
+      "Dashboard",
+      "Orders",
+      "Merchants",
+      "Riders",
+      "Analytics",
+      "Delivery Management",
+    ],
     mockup: "dashboard",
   },
 ];
@@ -523,8 +570,8 @@ export const deliveryFaqItems: FaqItem[] = [
     question: "Is this a white-label platform?",
     answer: (
       <p className="leading-relaxed">
-        Yes. The platform is built to launch under your own brand, from the customer, merchant and
-        rider apps to the admin dashboard.
+        Yes. The platform is built to launch under your own brand, from the
+        customer, merchant and rider apps to the admin dashboard.
       </p>
     ),
   },
@@ -533,8 +580,9 @@ export const deliveryFaqItems: FaqItem[] = [
     question: "Can I use it for food delivery?",
     answer: (
       <p className="leading-relaxed">
-        Yes. Food delivery is the primary entry point, connecting customers with restaurants and
-        managing the entire ordering and delivery experience out of the box.
+        Yes. Food delivery is the primary entry point, connecting customers with
+        restaurants and managing the entire ordering and delivery experience out
+        of the box.
       </p>
     ),
   },
@@ -543,8 +591,9 @@ export const deliveryFaqItems: FaqItem[] = [
     question: "Can I add grocery and supermarkets later?",
     answer: (
       <p className="leading-relaxed">
-        Yes. The platform is multi-vertical from day one, so you can expand into grocery and
-        supermarket delivery as your business grows, without switching systems.
+        Yes. The platform is multi-vertical from day one, so you can expand into
+        grocery and supermarket delivery as your business grows, without
+        switching systems.
       </p>
     ),
   },
@@ -553,8 +602,9 @@ export const deliveryFaqItems: FaqItem[] = [
     question: "Can customers request custom deliveries?",
     answer: (
       <p className="leading-relaxed">
-        Yes — customers can specify pickup and drop-off locations for supported delivery use
-        cases, such as packages, documents and local store deliveries.
+        Yes — customers can specify pickup and drop-off locations for supported
+        delivery use cases, such as packages, documents and local store
+        deliveries.
       </p>
     ),
   },
@@ -563,9 +613,10 @@ export const deliveryFaqItems: FaqItem[] = [
     question: "Does the platform support multiple deliveries per rider?",
     answer: (
       <p className="leading-relaxed">
-        Yes. Smart multi-order matching identifies compatible orders and delivery assignments
-        based on pickup locations, delivery destinations, timing and rider availability, so a
-        single rider can efficiently handle more than one delivery.
+        Yes. Smart multi-order matching identifies compatible orders and
+        delivery assignments based on pickup locations, delivery destinations,
+        timing and rider availability, so a single rider can efficiently handle
+        more than one delivery.
       </p>
     ),
   },
@@ -574,49 +625,83 @@ export const deliveryFaqItems: FaqItem[] = [
     question: "Do customers, merchants and riders get a mobile app?",
     answer: (
       <p className="leading-relaxed">
-        Yes. Each role has its own dedicated app: customers order and track deliveries, merchants
-        manage products and orders, and riders manage assignments and navigation.
-      </p>
-    ),
-  },
-  {
-    value: "07",
-    question: "Do I get an admin dashboard?",
-    answer: (
-      <p className="leading-relaxed">
-        Yes. A web-based admin dashboard gives you complete control over customers, merchants,
-        riders, orders, deliveries, pricing, promotions and reporting.
+        Yes. Each role has its own dedicated app: customers order and track
+        deliveries, merchants manage products and orders, and riders manage
+        assignments and navigation.
       </p>
     ),
   },
   {
     value: "08",
-    question: "Can I integrate my own payment gateway?",
+    question: "Do I get an admin dashboard?",
     answer: (
       <p className="leading-relaxed">
-        Payment integrations are supported as part of the platform. Talk to our team about the
-        specific payment gateways relevant to your market.
+        Yes. A web-based admin dashboard gives you complete control over
+        customers, merchants, riders, orders, deliveries, pricing, promotions
+        and reporting.
       </p>
     ),
   },
   {
     value: "09",
-    question: "Can I operate in multiple cities?",
+    question: "Can I customize the branding?",
     answer: (
       <p className="leading-relaxed">
-        Yes. Delivery zones and multi-city operation are supported, with dedicated configuration
-        available on our Enterprise plan.
+        Yes. The platform is designed to be adapted to your brand across the
+        customer, merchant and rider apps as well as the admin dashboard.
       </p>
     ),
   },
   {
     value: "10",
+    question: "Can I integrate my own payment gateway?",
+    answer: (
+      <p className="leading-relaxed">
+        Payment integrations are supported as part of the platform. Talk to our
+        team about the specific payment gateways relevant to your market.
+      </p>
+    ),
+  },
+  {
+    value: "11",
+    question: "Can I operate in multiple cities?",
+    answer: (
+      <p className="leading-relaxed">
+        Yes. Delivery zones and multi-city operation are supported, with
+        dedicated configuration available on our Enterprise plan.
+      </p>
+    ),
+  },
+  {
+    value: "12",
     question: "Do you provide deployment and maintenance?",
     answer: (
       <p className="leading-relaxed">
-        Deployment and ongoing maintenance and support are available as part of your plan. Setup,
-        integrations and custom development are scoped and priced separately from the platform
-        license — see the pricing section for details.
+        Deployment and ongoing maintenance and support are available as part of
+        your plan. Setup, integrations and custom development are scoped and
+        priced separately from the platform license — see the pricing section
+        for details.
+      </p>
+    ),
+  },
+  {
+    value: "13",
+    question: "Can I request custom features?",
+    answer: (
+      <p className="leading-relaxed">
+        Yes. Custom features and workflows can be added through custom
+        development, handled separately from the base platform license.
+      </p>
+    ),
+  },
+  {
+    value: "14",
+    question: "Do I get the source code?",
+    answer: (
+      <p className="leading-relaxed">
+        Source code access, white-label rights, hosting and support terms depend
+        on the plan and engagement. Our team will walk you through the exact
+        licensing arrangement before you commit.
       </p>
     ),
   },

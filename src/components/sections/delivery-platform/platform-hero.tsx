@@ -2,7 +2,7 @@ import SectionShow from "@/components/section-show";
 
 const PlatformHero = () => {
   return (
-    <div className="w-screen bg-gradient-to-b from-background3 via-background3 to-white flex flex-col items-center gap-6 pt-32 pb-14 px-6 text-center">
+    <div className="w-screen bg-gradient-to-b from-background3 via-background3 to-white flex flex-col items-center gap-6 pt-10 pb-14 px-6 text-center">
       <SectionShow title="Platform" className="bg-white" />
       <h1
         data-aos="fade-up"

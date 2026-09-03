@@ -16,7 +16,7 @@ const transparencyItems = [
 const PricingContent = () => {
   return (
     <main className="w-screen bg-white">
-      <div className="flex flex-col items-center gap-8 pt-32 pb-10 px-6 text-center">
+      <div className="flex flex-col items-center gap-8 pt-10 pb-10 px-6 text-center">
         <SectionShow title="Pricing" />
         <h1
           data-aos="fade-up"

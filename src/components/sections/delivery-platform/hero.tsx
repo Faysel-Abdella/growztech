@@ -29,7 +29,7 @@ export default function DeliveryPlatformHero() {
         className={cn(
           "absolute inset-0",
           "[background-size:20px_20px]",
-          "[background-image:radial-gradient(#d4d4d4_1px,transparent_1px)]"
+          "[background-image:radial-gradient(#d4d4d4_1px,transparent_1px)]",
         )}
       />
       <div
@@ -51,8 +51,9 @@ export default function DeliveryPlatformHero() {
           className="w-full flex flex-col gap-4 items-center justify-center mt-6"
         >
           <p className="text-sm sm:text-base text-center lg:max-w-[823px] text-description md:text-lg font-normal font-inter leading-normal md:leading-relaxed lg:w-[85%]">
-            A complete white-label delivery solution for food, restaurants, groceries,
-            supermarkets, retail and on-demand delivery — ready to launch under your brand.
+            A complete white-label delivery solution for food, restaurants,
+            groceries, supermarkets, retail and on-demand delivery — ready to
+            launch under your brand.
           </p>
         </div>
         <div
@@ -60,7 +61,10 @@ export default function DeliveryPlatformHero() {
           data-aos-duration="800"
           className="z-30 mt-8 md:mt-12 justify-start items-center gap-2 md:gap-5 flex max-md:flex-col max-md:w-full"
         >
-          <Button className="rounded-full p-5 md:p-7 text-base font-semibold max-md:w-full" asChild>
+          <Button
+            className="rounded-full p-5 md:p-7 text-base font-semibold max-md:w-full"
+            asChild
+          >
             <Link href="/contact-us">Request a Demo</Link>
           </Button>
           <Button
@@ -78,11 +82,27 @@ export default function DeliveryPlatformHero() {
         data-aos-duration="800"
         className="relative w-full flex flex-col items-center gap-8 pb-16 px-6"
       >
-        <DashboardMockup label="Admin Dashboard" icon={LayoutDashboard} className="w-full max-w-3xl" />
+        <DashboardMockup
+          label="Admin Dashboard"
+          icon={LayoutDashboard}
+          className="w-full max-w-3xl"
+        />
         <div className="flex flex-wrap items-start justify-center gap-6">
-          <PhoneMockup label="Customer App" icon={Smartphone} className="max-w-[150px]" />
-          <PhoneMockup label="Merchant App" icon={Store} className="max-w-[150px]" />
-          <PhoneMockup label="Rider App" icon={Bike} className="max-w-[150px]" />
+          <PhoneMockup
+            label="Customer App"
+            icon={Smartphone}
+            className="max-w-[150px]"
+          />
+          <PhoneMockup
+            label="Merchant App"
+            icon={Store}
+            className="max-w-[150px]"
+          />
+          <PhoneMockup
+            label="Rider App"
+            icon={Bike}
+            className="max-w-[150px]"
+          />
         </div>
         <p className="text-sm font-inter text-description text-center">
           Customer App · Merchant App · Rider App · Admin Dashboard
